@@ -5,7 +5,16 @@
 一个基于 [pc-nsf-hifigan](https://github.com/openvpi/vocoders)的新的 utau 重采样器。
 
 > **RTX 50 系（Blackwell）适配分支 —— 由 SugarJelly 维护。**
-> 本分支基于 CUDA 12.8（cu128）+ PyTorch 2.8.0 构建，因此可在 NVIDIA RTX 50 系显卡上运行（上游的 CUDA 12.4 / torch 2.6 版本不支持 50 系）。相对上游唯一的源码改动在 `pyproject.toml`（torch 锁定为 `2.8.0`、改用 cu128 源）。Fork 自 [openhachimi/hifisampler](https://github.com/openhachimi/hifisampler) v0.0.6，遵循 Apache 2.0 协议。预装环境的整合包（内置 venv）单独发布，见 Releases / 下载链接。
+> 本分支基于 CUDA 12.8（cu128）+ PyTorch 2.8.0 构建，因此可在 NVIDIA RTX 50 系显卡上运行（上游的 CUDA 12.4 / torch 2.6 版本不支持 50 系）。相对上游唯一的源码改动在 `pyproject.toml`（torch 锁定为 `2.8.0`、改用 cu128 源）。Fork 自 [openhachimi/hifisampler](https://github.com/openhachimi/hifisampler) v0.0.6，遵循 Apache 2.0 协议。
+
+## 下载（RTX 50 系整合包）
+
+预装环境整合包（内置 PyTorch 2.8.0 + cu128 虚拟环境，约 2.4 GB），存放于百度网盘：
+
+- **链接：** https://pan.baidu.com/s/1KEJMW2D8ske9yU3FC-OmJg?pwd=bs5p
+- **提取码：** `bs5p`
+
+下载解压后运行 `start.bat` 即可。（整合包超过 GitHub 单文件 2 GB 上限，故走网盘而非 GitHub Releases。）
 
 ## 为什么叫 hifisampler?
 
