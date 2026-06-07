@@ -4,6 +4,9 @@
 
 A new UTAU resampler based on [pc-nsf-hifigan](https://github.com/openvpi/vocoders) for virtual singer.
 
+> **RTX 50-series (Blackwell) fork — maintained by SugarJelly.**
+> This fork builds against CUDA 12.8 (cu128) with PyTorch 2.8.0 so it runs on NVIDIA RTX 50-series GPUs, which upstream's CUDA 12.4 / torch 2.6 build does not support. The only source change from upstream is in `pyproject.toml` (torch pinned to `2.8.0` and the cu128 wheel index). Forked from [openhachimi/hifisampler](https://github.com/openhachimi/hifisampler) v0.0.6, licensed under Apache 2.0. A prebuilt integrated package (bundled venv) is distributed separately — see the Releases / download link.
+
 **For Jinriki please use our [Hachimisampler](https://github.com/openhachimi/hachimisampler).**
 
 ## Why is it called hifisampler?
